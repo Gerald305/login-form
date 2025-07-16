@@ -3,32 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Regular Expression</title>
-    
 </head>
-<body>
-    <form id="form" class="w-80 mx-140 h-full bg-amber-700 p-4 m-20 border bg-white/80 shadow-ig rounded">
-        <label for="fullName">Full Name: </label>
-        <input type="" placeholder="Enter your fullname" id="email" class="block rounded p-4 border width-7">
-        <br>
-        <label for="email">Email Address: </label>
-        <input type="" placeholder="Enter your email address" id="email" class="block rounded p-4 border mx-4 width-7">
-        <br>
-        <label for="password">Password: </label>
-        <input type="password" placeholder="Enter a password" id="password" class="block round p-4 border mx-4 width-7">
-        <br>
-        <div class="mt-[-20px]">Reset your password using your <b class="text-red-500">Email Address</b>
-        <a class="text-red-500" href=""> or Log in</a>
+  <style>
+        body {
+            background-image: url('https://www.jahasoft.pk/wp-content/uploads/2018/11/Computer-Academy-in-Quetta.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+<body class="bg-gray-100">
+    <form id="form" class="w-96 mx-auto bg-white p-6 mt-20 border rounded shadow-md">
+        <label for="fullName" class="block font-semibold mb-1">Full Name:</label>
+        <input type="text" placeholder="Enter your full name" id="fullName" class="block w-full rounded p-2 border mb-4">
+
+        <label for="email" class="block font-semibold mb-1">Email Address:</label>
+        <input type="email" placeholder="Enter your email address" id="email" class="block w-full rounded p-2 border mb-4">
+
+        <label for="password" class="block font-semibold mb-1">Password:</label>
+        <input type="password" placeholder="Enter a password" id="password" class="block w-full rounded p-2 border mb-4">
+
+        <div class="text-sm text-gray-600 mb-4">
+            Reset your password using your <b class="text-red-500" href="www.gmail.com">Email Address</b>
+            <a class="text-red-500 underline ml-1" href="#">or Log in</a>
         </div>
 
-        <button type="submit" class="hover:cursor-pointer bg-blue-400 uppercase p-4 m-auto block">Register</button>
+        <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white uppercase p-2 rounded w-full">Register</button>
 
-        <p id="error" class="text-red-500 font-sm"></p>
+        <p id="error" class="mt-4 text-sm font-semibold"></p>
     </form>
 
-    <div class="p-10 justify-center mt-[-96px] px-40">Don't have an account? <b> Create a New Account</b></div>
+    <div class="text-center mt-6 text-sm">Don't have an account? <b class="text-blue-500">Create a New Account</b></div>
 
     <script src="Ass 2.js"></script>
-
 </body>
 </html>
